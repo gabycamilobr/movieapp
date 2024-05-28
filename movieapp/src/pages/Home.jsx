@@ -9,7 +9,7 @@ function Home() {
                 {
                     
                 data.map(filme => (
-                    <div className='card bg-slate-400' key={filme.title}>
+                    <div className='card bg-primary-cards' key={filme.title}>
                     <h1>{filme.title}</h1>
                     <img src={filme.image} alt={filme.title} />
 

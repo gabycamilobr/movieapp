@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary-gabys': '#735ABC'
+        'primary-gabys': '#8E0022',
+        'primary-cards': '#F3E3E7'
       }
     },
   },
