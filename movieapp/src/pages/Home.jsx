@@ -11,7 +11,7 @@ function Home() {
                 data.map(filme => (
                     <div className='card bg-primary-cards' key={filme.title}>
                     <h1>{filme.title}</h1>
-                    <img src={filme.image} alt={filme.title} />
+                    <img className='mb-2' src={filme.image} alt={filme.title} />
 
                     <div className='texto'>
                         {filme.text.map(texto => (
@@ -21,7 +21,7 @@ function Home() {
                     
                     <div className='tag'>
                         {filme.tags.map(tag => (
-                            <span key={tag} className='text-purple-600'> {tag} </span>
+                            <span key={tag} className='text-purple-600 p-1 m-1 '> {tag} </span>
                         ))}
                     </div>
                     </div>
