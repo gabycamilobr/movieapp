@@ -9,9 +9,9 @@ function Home() {
                 {
                     
                 data.map(filme => (
-                    <div className='card bg-primary-cards' key={filme.title}>
-                    <h1>{filme.title}</h1>
-                    <img className='mb-2' src={filme.image} alt={filme.title} />
+                    <div className='card bg-primary-cards w-25' key={filme.title}>
+                    <h1 className='text-primary-gabys font-semibold'>{filme.title}</h1>
+                    <img className='mb-2 flex items-center' src={filme.image} alt={filme.title} />
 
                     <div className='texto'>
                         {filme.text.map(texto => (

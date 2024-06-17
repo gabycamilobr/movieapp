@@ -1,6 +1,6 @@
 function Sobre() {
     return ( 
-        <h1>Sobre</h1>
+        <h1 className="">Nossa Empresa</h1>
      );
 }
 

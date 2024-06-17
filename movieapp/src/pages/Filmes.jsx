@@ -18,7 +18,7 @@ useEffect( () => {
     return ( 
         <>
         <h1>Filmes</h1>
-        <div className="listaFilmes flex flex-row gap-3">
+        <div className="listaFilmes grid grid-cols-3 gap-4">
         {
             filmes.map(filme => (
                 <div className="card-filme" key={filme.id}>
