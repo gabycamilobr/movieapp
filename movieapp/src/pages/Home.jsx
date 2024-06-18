@@ -1,45 +1,38 @@
-import data from '../../artigos.json'
+import data from '../../artigos.json';
 
 function Home() {
-    console.log(data)
-    return ( 
-        <main>
-            <input type="text" name="busca" id="buscar" placeholder="Digite aqui sua busca"/>
-            <div className='grid grid-cols-3 gap-4'>
-                {
-                    
-                data.map(filme => (
-                    <div className='card bg-primary-cards w-25' key={filme.title}>
-                    <h1 className='text-primary-gabys font-semibold'>{filme.title}</h1>
-                    <img className='mb-2 flex items-center' src={filme.image} alt={filme.title} />
+    console.log(data);
+    return (
+        
+        <main className="container mx-auto my-4">
+        <div className="mb-4">
+            <label htmlFor="buscar" className="block text-lg font-medium mb-2">Procurando filme?</label>
+            <input
+                type="text"
+                name="busca"
+                id="buscar"
+                placeholder="Clique para digitar..."
+                className="w-96 px-4 py-2 rounded-full border mb-5 border-gray-300 "
+            />
+        </div>
+        <h1 className='text-primary-gabys font-bold text-xl mb-8'>Notícias Rápidas</h1>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
+            {data.map(filme => (
+                <div className='card bg-primary-cards p-4 rounded-lg flex flex-col items-center' key={filme.title}>
+                    <h1 className='text-primary-gabys font-semibold text-lg mb-2'>{filme.title}</h1>
+                    <img className='mb-2' src={filme.image} alt={filme.title} />
 
-                    <div className='texto'>
+                    <div className='texto '>
                         {filme.text.map(texto => (
                             <p key={texto}>{texto}</p>
                         ))}
                     </div>
-                    
-                    <div className='tag'>
-                        {filme.tags.map(tag => (
-                            <span key={tag} className='text-purple-600 p-1 m-1 '> {tag} </span>
-                        ))}
-                    </div>
-                    </div>
-                ))}
-            </div>
-        </main>
-     );
+                
+                </div>
+            ))}
+        </div>
+    </main>
+    );
 }
 
-export default Home ;
-
-//<div className='card'>
-   // <h1>Titulo do Filme</h1>;
-   // <img src="" alt="" />;
-   // <div className='tag'>
-    //    <span>
-            
-    //    </span>
-  //  </div>
-
-//</div>
+export default Home;

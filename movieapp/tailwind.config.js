@@ -10,7 +10,7 @@ export default {
         'primary-gabys': '#8E0022',
         'primary-cards': '#F3E3E7'
       }
-    },
+    }
   },
   plugins: [],
 }
