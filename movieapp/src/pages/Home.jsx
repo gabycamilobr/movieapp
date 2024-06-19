@@ -16,7 +16,7 @@ function Home() {
             />
         </div>
         <h1 className='text-primary-gabys font-bold text-xl mb-8'>Notícias Rápidas</h1>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
+        <div className='grid md:grid-cols-3 gap-8 '>
             {data.map(filme => (
                 <div className='card bg-primary-cards p-4 rounded-lg flex flex-col items-center' key={filme.title}>
                     <h1 className='text-primary-gabys font-semibold text-lg mb-2'>{filme.title}</h1>
