@@ -40,15 +40,15 @@ function Filmes() {
 
     return (
         <div className="min-h-screen bg-white">     
-            <main className="container mx-auto my-8 p-5">
+            <main className="container my-8 p-10">
                 <h1 className="text-3xl font-bold text-red-800 mb-8">Filmes Populares</h1>
                 {Object.keys(filmesPorCategoria).map(categoria => (
                     <div key={categoria} className="mb-12">
                         <h2 className="text-2xl font-bold mb-8 ">{categoria}</h2>
-                        <div className="grid grid-cols-3 gap-8">
+                        <div className="grid grid-cols-4 gap-10">
                             {filmesPorCategoria[categoria].map(filme => (
                                 <div className="card-filme" key={filme.id}>
-                                    <img className="w-full rounded-lg" src={`${urlImg}${filme.poster_path}`} alt={filme.title} />
+                                    <img className="rounded-lg " src={`${urlImg}${filme.poster_path}`} alt={filme.title} />
                                     <h3 className="text-lg font-semibold mt-2">{filme.title}</h3>
                                     <Link to={`/filmes/${filme.id}`} className="block bg-primary-gabys text-white text-center py-2 rounded mt-4 mb-7">Saber mais</Link>
                                 </div>

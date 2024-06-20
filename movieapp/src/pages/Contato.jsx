@@ -1,18 +1,15 @@
 const Contato = () => {
     return (
-      <div className="min-h-screen">
-        <main className="container mx-auto my-8 p-2">
-          <div className="flex items-center mb-8">
-            <img src="../../img/setinha.png" className="w-8 mr-10 " alt="" />
-            <h2 className="text-2xl font-bold text-red-800">Contato</h2>
-          </div>
-          <form className="space-y-4 flex colum items-center flex-col">
+      <div>
+        <main className="container my-8 p-2">
+
+          <form className=" flex colum items-center flex-col">
             <div>
               <label className="block text-lg font-medium">Nome:</label>
               <input
                 type="text"
                 placeholder="Clique para digitar..."
-                className="w-96  px-3 py-2 border border-black rounded-lg"
+                className="w-96 mb-5 px-3 py-2 border border-black rounded-lg"
               />
             </div>
             <div>
@@ -20,21 +17,21 @@ const Contato = () => {
               <input
                 type="email"
                 placeholder="Clique para digitar..."
-                className="w-96 px-3 py-2 border border-black rounded-lg"
+                className="w-96 px-3 mb-5 py-2 border border-black rounded-lg"
               />
             </div>
             <div>
               <label className="block text-lg font-medium">Mensagem:</label>
               <textarea
                 placeholder="Clique para digitar..."
-                className="w-96 px-3 py-2 border border-black rounded-lg"
+                className="w-96 px-3 py-2 border mb-5 border-black rounded-lg"
                 rows="4"
               ></textarea>
             </div>
             <div>
               <button
                 type="submit"
-                className="w-96 bg-red-800 text-white font-medium py-2 rounded-2xl"
+                className="w-96 bg-red-800 mb-12 text-white font-medium py-2 rounded-2xl"
               >
                 Enviar
               </button>
